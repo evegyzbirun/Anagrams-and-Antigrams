@@ -19,9 +19,9 @@
 
 1. use project link
 2. clone the project with repo link
-3. use VScode for projcet folder
-4. Run bundle in terminal
-
+3. use VScode and find the path to the project folder
+4. Run bundle in terminal for Gems files
+5. Install RSpec by running $ gem install rspec from your terminal.
 
 
 ## Known bugs
