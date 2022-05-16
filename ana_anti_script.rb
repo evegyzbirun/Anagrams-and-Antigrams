@@ -1,6 +1,6 @@
 #!/usr/bin/ruby
 require('./lib/anagrams_and_antigrams')
-efefefe
+
 puts 'Welcome to the Anagrams and Antigrams'
 puts 'Please enter a first word'
 wordOne = gets.chomp
