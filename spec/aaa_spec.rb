@@ -34,8 +34,8 @@ describe("#AaA") do
     expect(check.anagram).to(eq("These words are antigrams." ))
   end
   it("if the sentences have fake words") do 
-    check = AaA.new('The Mrs Code','Here come dots')
-    expect(check.anagram).to(eq("These words are anagrams." ))
+    check = AaA.new('w frt gvg','fwt r gvg')
+    expect(check.anagram).to(eq("These words are not words."))
   end
 end
 end
