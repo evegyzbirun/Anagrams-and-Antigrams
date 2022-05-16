@@ -36,6 +36,7 @@ class AaA
     false
     end
   end
+
   #4
   def antigrams
     array1 = @wordOne.split('')
@@ -49,5 +50,13 @@ class AaA
   #5
   def sentences_match
     #two str inputs, each word of both sentences have to be real words
+    array1 = @wordOne.split(' ')
+    array2 = @wordTwo.split(' ')
+    if ((actual_words(anagrams(array1))) == (actual_words(anagrams(array2))))
+    "the two sentences are anagrams."
+      else
+        "the two sentences are antigrams."
+      end
+
   end
 end
