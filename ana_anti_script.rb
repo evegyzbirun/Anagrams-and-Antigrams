@@ -9,5 +9,5 @@ wordTwo = gets.chomp
 puts "The first word  you entered is #{wordOne.string}"
 puts "The second word you entered is #{wordTwo.string}"
 final = AaA.new(wordOne, wordTwo)
-result = final.anagram()
+result = final.anagram
 
