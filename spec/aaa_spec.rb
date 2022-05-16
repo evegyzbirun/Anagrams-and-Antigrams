@@ -26,7 +26,7 @@ describe("#AaA") do
     expect(check.anagram).to(eq("These words are not words."))
   end
   it("What are the words in the two sentences anagrams or antigrams?") do 
-    check = AaA.new('The Morse Code','Here come dots')
+    check = AaA.new('The Morse Code!','Here come dots!')
     expect(check.anagram).to(eq("These words are anagrams." ))
   end
   it("What are the words in the two sentences anagrams or antigrams?") do 

@@ -3,6 +3,7 @@ require('pry')
 class AaA 
   attr_reader :wordOne, :wordTwo
   def initialize(wordOne, wordTwo)
+# before running in (3 steps) we can change both inputs to the more simple form(remove spaces, all letters downcase, )
     @wordOne = wordOne.downcase.delete(' ')
     @wordTwo = wordTwo.downcase.delete(' ')
     @wordOne.gsub(/[A-Za-z]/,'')
