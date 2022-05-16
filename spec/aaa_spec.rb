@@ -21,6 +21,10 @@ describe("#AaA") do
     check = AaA.new('pkmgy','mgpky')
     expect(check.anagram).to(eq("These words are anagrams."))
   end
+  it("check if the inputs are words, so if they have vowel (a, i, e, o, u) or y") do 
+    check = AaA.new('pkmg','mgpk')
+    expect(check.anagram).to(eq("These words are not words."))
+  end
   it("What are the words in the two sentences anagrams or antigrams?") do 
     check = AaA.new('The Morse Code','Here come dots')
     expect(check.anagram).to(eq("These words are anagrams." ))

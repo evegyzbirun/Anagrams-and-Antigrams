@@ -8,7 +8,7 @@ class AaA
     @wordOne.gsub(/[A-Za-z]/,'')
     @wordTwo.gsub(/[A-Za-z]/,'')
   end
-
+# 3 steps
   def anagram()
     if !(@wordOne =~ /[aeiouy]/) && !(@wordTwo =~ /[aeiouy]/)
       "These words are not words."
@@ -19,5 +19,13 @@ class AaA
     end
   end
 end
+
+
+#if user_words.is_word
+#  if user_words.anagram
+#    puts "Those words are anagrams!"
+#  elsif user_words.antigram
+#    puts "Those words are antigrams"
+
 
  
