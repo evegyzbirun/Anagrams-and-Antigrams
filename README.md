@@ -22,6 +22,9 @@
 3. use VScode and find the path to the project folder
 4. Run bundle in terminal for Gems files
 5. Install RSpec by running $ gem install rspec from your terminal.
+6. to test run rspec
+7. run ruby ana_anti_script.rb 
+8. ready to work
 
 
 ## Known bugs
@@ -32,5 +35,5 @@
 
 MIT
 
-Copyright (c) 5/6/2022 Evgeny Zbirun
+Copyright (c) 5/16/2022 Evgeny Zbirun
 
