@@ -4,10 +4,9 @@ class AaA
   attr_reader :wordOne, :wordTwo
   def initialize(wordOne, wordTwo)
 # before running in (3 steps) we can change both inputs to the more simple form(remove spaces, all letters downcase, )
-    @wordOne = wordOne.downcase.delete(' ')
-    @wordTwo = wordTwo.downcase.delete(' ')
-    @wordOne.gsub(/[A-Za-z]/,'')
-    @wordTwo.gsub(/[A-Za-z]/,'')
+    @wordOne = wordOne.downcase.delete(' ').gsub(/[^0-9A-Za-z]/, '')
+    @wordTwo = wordTwo.downcase.delete(' ').gsub(/[^0-9A-Za-z]/, '')
+    
   end
 # 3 steps
   def anagram()
