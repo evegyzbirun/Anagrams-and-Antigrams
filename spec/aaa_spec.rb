@@ -13,7 +13,7 @@ describe("#AaA") do
   end
   it("words might have different cases but should still be anagrams") do 
     check = AaA.new('tEA','EaT')
-    expect(check.bothWords).to(eq(true))
+    expect(check.anagrams).to(eq(true))
   end
   it("check if the inputs are words, so if they have vowel (a, i, e, o, u) or y") do 
     check = AaA.new('pkmgy','mgpky')

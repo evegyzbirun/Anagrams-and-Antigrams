@@ -1,28 +1,18 @@
 class AaA 
   def initialize(wordOne, wordTwo)
-    @wordOne = wordOne
-    @wordTwo = wordTwo
-    
+    @wordOne = word1.downcase.delete(' ').gsub(/[A-Za-z]/, '')
+    @wordTwo = word2.downcase.delete(' ').gsub(/[A-Za-z]/, '')
   end
   #1
   def anagrams 
-    if (sort(@wordOne) == sort(@wordTwo))
+    if (@wordOne.chars.sort == @wordTwo.chars.sort)
       "These words are anagrams."
     else 
       "These words are not anagrams."
     end
   end
-  def sort (stringMain)
-    stringMain.chars.sort.join
-  end
- #2
-  def bothWords
-    if (sort(@wordTwo.downcase())) == (sort(@wordOne.downcase()))
-      true
-    else
-      false
-    end
-  end
+ 
+ 
   #3
   def actual_words 
     array1 = @wordOne.split('')
