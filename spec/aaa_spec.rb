@@ -25,6 +25,10 @@ describe("#AaA") do
   end
   it("Account for two sentences being compared as anagrams or antigrams") do 
     check = AaA.new('The Morse Code','Here come dots!')
-    expect(check.sentences_match).to(eq("Account for two sentences being compared as anagrams or antigrams." ))
+    expect(check.sentences_match).to(eq("the two sentences are anagrams." ))
+  end
+  it("Account for two sentences being compared as anagrams or antigrams") do 
+    check = AaA.new('The Morse Code','Here come dots!')
+    expect(check.sentences_match).to(eq("the two sentences are not anagrams." ))
   end
 end
