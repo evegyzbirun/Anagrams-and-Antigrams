@@ -9,15 +9,18 @@ class AaA
     
   end
 # 3 steps
-  def anagram()
-    if !(@wordOne =~ /[aeiouy]/) && !(@wordTwo =~ /[aeiouy]/)
-      "These words are not words."
-    elsif (@wordOne.chars.sort == @wordTwo.chars.sort)
-      "These words are anagrams."
-    else (@wordOne.chars.sort != @wordTwo.chars.sort)
-      "These words are antigrams."
-    end
+def anagram()
+  if !(@wordOne =~ /[aeiouy]/) && !(@wordTwo =~ /[aeiouy]/)
+    "These words are not words."
+  elsif (@wordOne.chars.sort == @wordTwo.chars.sort)
+    "These words are anagrams."
+  elsif (@wordOne.chars.sort.length > @wordTwo.chars.sort.length) || (@wordOne.chars.sort.length < @wordTwo.chars.sort.length)
+    "These words aren't anagrams or antigrams."
+    
+  else (@wordOne.chars.sort != @wordTwo.chars.sort)
+    "These words are antigrams."
   end
+end
 end
 
 
