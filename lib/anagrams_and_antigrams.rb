@@ -14,11 +14,10 @@ def anagram()
     "These words are not words."
   elsif (@wordOne.chars.sort == @wordTwo.chars.sort)
     "These words are anagrams."
-  elsif (@wordOne.chars.sort.length > @wordTwo.chars.sort.length) || (@wordOne.chars.sort.length < @wordTwo.chars.sort.length)
-    "These words aren't anagrams or antigrams."
-    
-  else (@wordOne.chars.sort != @wordTwo.chars.sort)
+  elsif (@wordOne.chars.sort & @wordTwo.chars.sort).empty?
     "These words are antigrams."
+  else (@wordOne.chars.sort != @wordTwo.chars.sort)
+    "These words aren't anagrams or antigrams."
   end
 end
 end

@@ -9,9 +9,9 @@ describe("#AaA") do
     check = AaA.new("time","imte")
     expect(check.anagram).to(eq("These words are anagrams."))
   end
-  it("Check if two words are not anagrams") do 
-    check = AaA.new("red","good")
-    expect(check.anagram).to(eq("These words are antigrams."))
+  it("Check if two words are antigrams.") do 
+    check = AaA.new("rei","good")
+    expect(check.anagram).to(eq( "These words are antigrams."))
   end
   it("words might have different cases but should still be anagrams") do 
     check = AaA.new('tEA','EaT')
@@ -36,6 +36,10 @@ describe("#AaA") do
   it("if the sentences have fake words") do 
     check = AaA.new('w frt gvg','fwt r gvg')
     expect(check.anagram).to(eq("These words are not words."))
+  end
+  it("if two words are different length or some letter math , but not all") do 
+    check = AaA.new('Mut','Mule')
+    expect(check.anagram).to(eq("These words aren't anagrams or antigrams."))
   end
 end
 end
